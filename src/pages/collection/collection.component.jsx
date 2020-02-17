@@ -7,7 +7,7 @@ import CollectionsContext from '../../contexts/collections/collections.context';
 import './collection.styles.scss';
 
 const CollectionPage = ({ match: { params: { collectionId }} }) => {
-  const collections = useContext(CollectionsContext);
+  const { collections } = useContext(CollectionsContext);
   const collection = collections[collectionId];
   const { title, items } = collection;
   return (

@@ -1,5 +1,7 @@
-const INITIAL_STATE = {
-  sections: [
+import { createContext } from 'react';
+
+const DirectoryContext = createContext({
+  collections: [
     {
       title: 'hats',
       imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
@@ -33,13 +35,6 @@ const INITIAL_STATE = {
       linkUrl: 'shop/mens'
     }
   ]
-};
+});
 
-const directoryReducer = (state = INITIAL_STATE, action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
-
-export default directoryReducer;
+export default DirectoryContext;

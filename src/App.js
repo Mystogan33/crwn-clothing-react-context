@@ -36,7 +36,7 @@ const App = props => {
     return () => {
       unsubscribeFromAuth();
     }
-  }, [currentUser]);
+  }, []);
 
     return (
       <div>
